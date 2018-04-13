@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1523587216 source:e:\laboratorio y programación i\tp 1\cal\funciones.c
+	<stdio.h>
+	<stdlib.h>
+
+1523587368 source:e:\laboratorio y programación i\tp 1\cal\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1523587216 e:\laboratorio y programación i\tp 1\cal\funciones.h
+
