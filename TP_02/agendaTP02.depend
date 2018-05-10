@@ -1,0 +1,65 @@
+# depslib dependency file v1.0
+1525105567 source:e:\utn 1er aÑo\lab pro i\clases programacion_1_laboratorio_1\tp2\tp 2 entrega\agendatp02\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+
+1525117871 e:\utn 1er aÑo\lab pro i\clases programacion_1_laboratorio_1\tp2\tp 2 entrega\agendatp02\funciones.h
+
+1525105419 source:e:\utn 1er aÑo\lab pro i\clases programacion_1_laboratorio_1\tp2\tp 2 entrega\agendatp02\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+
+1525117871 source:e:\laboratorio y programación i\tp 2\tp_02\agendatp02\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+
+1525117871 e:\laboratorio y programación i\tp 2\tp_02\agendatp02\funciones.h
+
+1525105567 source:e:\laboratorio y programación i\tp 2\tp_02\agendatp02\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+
+1525980702 source:c:\users\notebook\desktop\alex\programacion_laboratorio i\trabajos prácticos\agendatp02\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+
+1525980932 c:\users\notebook\desktop\alex\programacion_laboratorio i\trabajos prácticos\agendatp02\funciones.h
+
+1525980006 source:c:\users\notebook\desktop\alex\programacion_laboratorio i\trabajos prácticos\agendatp02\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+
+1525980995 source:c:\users\notebook\desktop\alex\programacion_laboratorio i\trabajos prácticos\tp_02\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+
+1525980932 c:\users\notebook\desktop\alex\programacion_laboratorio i\trabajos prácticos\tp_02\funciones.h
+
+1525980006 source:c:\users\notebook\desktop\alex\programacion_laboratorio i\trabajos prácticos\tp_02\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones.h"
+
