@@ -15,7 +15,7 @@ int agregarPelicula(eMovie *movie, int indice, int *pIndice)
     strcpy(auxTitulo,validarCad("\nTitulo: ", "\nERROR. Se excedio limite de caracteres\n",50));
 
     for(i=0;i<indice;i++){
-        if(strcmp(auxTitulo,(movie+i)->titulo)==0 && (movie+i)->duracion==0){
+        if(strcmp(auxTitulo,(movie+i)->titulo)==0 && (movie+i)->duracion!=0){
             printf("\nERROR. Ya se almaceno una pelicula con ese titulo\n\n");
             flag = 1;
         }
@@ -40,6 +40,8 @@ int borrarPelicula(eMovie *movie, int indice)
     char borrar;
     int i;
     int existe = -1;
+
+    mostrarPelis(movie,indice);
 
     strcpy(auxTitulo,validarCad("\nIngrese titulo de pelicula a borrar: ","ERROR. Excedio cantidad de caracteres\n",50));
 
@@ -257,15 +259,37 @@ int validarNum(char msg[], char msgError[], int min, int max)
 char *validarCad(char msg[], char msgError[], int lon)
 {
     char *cad;
+    char *auxCad;
     int largo;
+    int lon2;
+    lon2 = lon + lon;
 
-    cad = (char*)malloc(sizeof(char)*lon);
+    cad = (char*)malloc(sizeof(char)*lon2);
 
     if(cad == NULL){
         printf("\nERROR. No hay mas espacio disponible\n\n");
     }
     else{
-        printf("%s",msg);
+
+         do{
+              printf("%s",msg);
+              fflush(stdin);
+              //gets(cad);
+              scanf("%[^\n]",cad);
+              largo = strlen(cad);
+              if(largo >= lon){
+                printf("%s",msgError);
+                //auxCad = (char*)realloc(cad,sizeof(char)*lon);
+              }
+              else{
+                auxCad = (char*)realloc(cad,sizeof(char)*lon);
+                if(auxCad != NULL){
+                    cad = auxCad;
+                }
+              }
+
+         }while(largo >= lon);
+        /*printf("%s",msg);
         fflush(stdin);
         scanf("%[^\n]",cad);
         largo = strlen(cad);
@@ -284,7 +308,7 @@ char *validarCad(char msg[], char msgError[], int lon)
                 scanf("%[^\n]",cad);
                 largo = strlen(cad);
             }
-        }
+        }*/
     }
     return cad;
 }
